@@ -13,8 +13,9 @@ Patches:
 2) allow installation of shaders for renderdragon;
 
 Screenshots:
-[nether_roof](./images/Screenshot_20240324-124336_Minecraft.png)
-[shaders](./images/Screenshot_20240324-124203_Minecraft.png)
+![nether_roof](./images/Screenshot_20240324-124336_Minecraft.png)
+
+![shaders](./images/Screenshot_20240324-124203_Minecraft.png)
 ------
 
 ## How to use
