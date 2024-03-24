@@ -27,6 +27,7 @@ Screenshots:
 2) Install the following dependencies
   - java-openjdk (openjdk)
   - zsh
+  - patchelf
   - wget 
   - sed
   - android-tools (android-tools-adb)
