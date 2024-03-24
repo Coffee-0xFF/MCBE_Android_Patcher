@@ -22,7 +22,7 @@ Screenshots:
 
 **On Linux**
 
-1) Make a backup of your wolds
+1) Make a backup of your worlds
    
 2) Install the following dependencies
   - java-openjdk (openjdk)
@@ -56,7 +56,7 @@ chmod +x ~/MCBE_Patcher.sh
 
 3) Install the [Termux app](https://f-droid.org/pt_BR/packages/com.termux)
    
-4) Open termux and run the following commands one at a time to install the dependences
+4) Open termux and run the following commands one at a time to install the dependencies
 ```
 termux-setup-storage
 apt update
@@ -87,7 +87,7 @@ chmod +x ~/script.sh
 
 8) If everything went well, you now have a modified apk with the path ~/minecraft_modded.apk, so move it to your phone's internal memory with the following command
 ```
-~/minecraft_modded.apk ~/storage/shared/minecraft_modded.apk
+mv ~/minecraft_modded.apk ~/storage/shared/minecraft_modded.apk
 ```
 
 9) Now uninstall the original game and install the minecraft modded  manually
