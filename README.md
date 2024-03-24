@@ -95,7 +95,7 @@ chmod +x ~/script.sh
 -------
 
 ## General notes:
-You can disable one of the two patches, change the value 1 of the nether_roof_limit_to_256 or materialbinloader variables to 0, the materialbinloader patch allows the installation of shaders
+You can disable one of the two patches, to do this, change the value 1 of the variables nether_roof_limit_to_256 or materialbinloader to 0. The materialbinloader patch allows the installation of shaders.
 
 This script only works with Android versions downloaded from the Google Play Store
 
