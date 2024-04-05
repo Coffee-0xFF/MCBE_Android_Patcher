@@ -4,7 +4,6 @@
 nether_roof_limit_to_256=1
 materialbinloader=1
 
-
 #Links to Download
 link_apkeditor=https://github.com/REAndroid/APKEditor/releases/download/V1.3.6/APKEditor-1.3.6.jar
 link_uber_apk_signer=https://github.com/patrickfav/uber-apk-signer/releases/download/v1.3.0/uber-apk-signer-1.3.0.jar
@@ -228,7 +227,6 @@ output_apk_path=$output_apk_folder/$output_apk_name
 java -jar ~/tmp/APKEditor.jar b -i ~/tmp/decompiled_minecraft -o $modded_apk_path
 [[ ! $(uname -o) = Android ]] && sign_apk $modded_apk_path && move_output
 [[   $(uname -o) = Android ]] && sign_apk_on_termux $modded_apk_path && move_output
-
 
 #it is to uninstall the original game and install the modded apk using adb
 [[ $1 = adb ]] && [[ -f $output_apk_path ]] && minecraft_installation_adb
