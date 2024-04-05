@@ -2,7 +2,7 @@
 A shell script to patch the android arm32 and arm64 versions of minecraft bedrock edition
 
 
-Tested on Minecraft Bedrock Edition 1.20.62, 1.20.61, and 1.20.72, may not work in future versions
+Tested on Minecraft Bedrock Edition 1.20.62, 1.20.61, 1.20.72 and 1.20.73 may not work in future versions
 
 
 You need the [official android version](https://play.google.com/store/apps/details?id=com.mojang.minecraftpe) to use this script
@@ -31,7 +31,6 @@ Screenshots:
   - wget 
   - sed
   - android-tools (android-tools-adb)
-  - android sdk build tools (you can install it using the [android studio](https://developer.android.com/studio?hl=pt-br))
 
 3) Enable USB debugging on your phone in [developer options](https://developer.android.com/studio/debug/dev-options)
 
@@ -39,7 +38,7 @@ Screenshots:
    
 6) download the script and give it execution permissions with the following commands
 ```
-wget -O ~/MCBE_Patcher.sh https://raw.githubusercontent.com/Coffee-0xFF/MCBE_Android_Patcher/main/Minecraft_Patcher_Linux.sh
+wget -O ~/MCBE_Patcher.sh https://raw.githubusercontent.com/Coffee-0xFF/MCBE_Android_Patcher/main/Minecraft_Patcher.sh
 chmod +x ~/MCBE_Patcher.sh
 ```
 7) Run the script with the option adb. If all processes are successful, the script will automatically modify the game, uninstall the original and install the new modded apk
@@ -52,7 +51,7 @@ chmod +x ~/MCBE_Patcher.sh
 **On Android**
 1) Make a backup of your worlds
    
-2) Using a file manager, copy the apks from the Google Play Store split apk into a folder, compress the files into a zip (some file managers, like X-Plore for example, do the compression automatically) and rename the zip file to Minecraft.zip
+2) Using a file manager, copy the APKs from the split APK downloaded from the Google Play Store to a folder, compress the files into a zip (some file managers, like X-Plore for example, do compression automatically), and rename the zip file to Minecraft.zip
    
 <img src="./images/screen.gif" width="350px" height="700px" />
 
@@ -78,13 +77,13 @@ ls
 
 6) download the script and give it execution permissions with the following commands
 ```
-wget -O ~/script.sh raw.githubusercontent.com/Coffee-0xFF/MCBE_Android_Patcher/main/Minecraft_Patcher_Termux.sh
-chmod +x ~/script.sh
+wget -O ~/MCBE_Patcher.sh https://raw.githubusercontent.com/Coffee-0xFF/MCBE_Android_Patcher/main/Minecraft_Patcher.sh
+chmod +x ~/MCBE_Patcher.sh
 ```
 
 7) Run the script, if it is already in the folder with the zip file with the apks.
 ```
-~/script.sh ./Minecraft.zip
+~/MCBE_Patcher.sh ./Minecraft.zip
 ```
 
 8) If everything went well, you now have a modified apk with the path ~/minecraft_modded.apk, so move it to your phone's internal memory with the following command
@@ -112,6 +111,8 @@ This script only works for the game compiled for arm or aarch64 (arm64)
 - MaterialBinLoader: [source code](https://github.com/ddf8196/MaterialBinLoader)
 
 - APK_Editor: [source code](https://github.com/REAndroid/APKEditor)
+  
+- Uber Apk Signer [source code ](https://github.com/patrickfav/uber-apk-signer)
 
 ----
 
