@@ -40,12 +40,28 @@ function check_input_files {
     local input_error=0
     local is_not_a_dir=0
     local is_not_a_zip=0
+    local is_a_zip=0
+
     [[   $1 = adb ]] && obtain_minecraft_apks && minecraft_apk_files=~/tmp/minecraft_split_apk
     [[ ! $1 = adb ]] && minecraft_apk_files=$1
+
     [[ ! -d "$minecraft_apk_files"      ]]  && is_not_a_dir=1
     [[ ! "$minecraft_apk_files" = *.zip ]]  && is_not_a_zip=1
-    [[ $is_not_a_dir -eq 1 ]] && [[ $is_not_a_zip -eq 1 ]] && input_error=1
-    [[ $input_error  -eq 1 ]] && echo -e "\e[1;91m""ERROR: ""\e[0m""Valid input not provided"   && exit
+    [[   "$minecraft_apk_files" = *.zip ]]  && is_a_zip=1
+
+    if [[ $is_a_zip -eq 1 && ! -f "$minecraft_apk_files" ]]; then
+        echo "$minecraft_apk_files not found"
+        input_error=1
+    fi
+
+    if [[ $is_not_a_dir -eq 1 && $is_not_a_zip -eq 1 ]]; then
+        input_error=1
+    fi
+
+    if [[ $input_error -eq 1 ]]; then
+        echo -e "\e[1;91mERROR: \e[0mValid input not provided"
+        exit
+    fi
 }
 
 function minecraft_apk_paths {
