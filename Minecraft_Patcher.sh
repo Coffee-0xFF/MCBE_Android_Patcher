@@ -29,7 +29,7 @@ mkdir -p ~/tmp
 function check_dependences  {
     [[ $(uname -o) == Android ]] && dependences=("${dependences_termux[@]}")
     for cmd in "${dependences[@]}"; do
-        if [[ ! $(which "$cmd") ]]; then
+        if [[ ! $(command -v "$cmd") ]]; then
             echo "$cmd was not found"
             exit 1
         fi
