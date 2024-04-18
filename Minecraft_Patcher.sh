@@ -205,14 +205,13 @@ function clear_tmp {
     rm -rf ~/tmp/minecraft_split_apk
 }
 
+check_dependences
+
+check_input_files $1
 
 printf "\e[1m""Downloading APKEditor""\e[0m""\e[90m""\n"
 wget -q --show-progress -O ~/tmp/APKEditor.jar $link_apkeditor
 printf "\e[0m"
-
-check_dependences
-
-check_input_files $1
 
 generate_apk_key
 
