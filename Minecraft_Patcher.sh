@@ -27,7 +27,7 @@ dependences_termux=("java" "wget" "sed" "apksigner")
 mkdir -p ~/tmp
 
 function check_dependences  {
-    [[ $(uname -o) == Android ]] && dependences=${dependences_termux[@]}
+    [[ $(uname -o) == Android ]] && dependences=("${dependences_termux[@]}")
     for cmd in "${dependences[@]}"; do
         if [[ ! $(which "$cmd") ]]; then
             echo "$cmd was not found"
