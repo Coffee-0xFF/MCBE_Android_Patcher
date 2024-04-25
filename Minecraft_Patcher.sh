@@ -2,7 +2,7 @@
 
 #Patches to be applied (1 to apply and 0 to not apply)
 nether_roof_limit_to_256=1
-materialbinloader=1
+materialbinloader=0
 
 #Links to Download
 link_apkeditor=https://github.com/REAndroid/APKEditor/releases/download/V1.3.6/APKEditor-1.3.6.jar
