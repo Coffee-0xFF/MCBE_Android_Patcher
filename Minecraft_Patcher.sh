@@ -5,7 +5,7 @@ nether_roof_limit_to_256=1
 materialbinloader=0
 
 #Links to Download
-link_apkeditor=https://github.com/REAndroid/APKEditor/releases/download/V1.3.6/APKEditor-1.3.6.jar
+link_apkeditor=https://github.com/REAndroid/APKEditor/releases/download/V1.3.9/APKEditor-1.3.9.jar
 link_uber_apk_signer=https://github.com/patrickfav/uber-apk-signer/releases/download/v1.3.0/uber-apk-signer-1.3.0.jar
 link_materialbinloader_arm32_so_file=https://github.com/ddf8196/MaterialBinLoader/releases/download/6/libmaterialbinloader-arm.so
 link_materialbinloader_arm64_so_file=https://github.com/ddf8196/MaterialBinLoader/releases/download/6/libmaterialbinloader-arm64.so
