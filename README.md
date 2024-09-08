@@ -88,7 +88,7 @@ chmod +x ~/MCBE_Patcher.sh
 
 8) If everything went well, you now have a modified apk with the path ~/minecraft_modded.apk, so move it to your phone's internal memory with the following command
 ```
-mv ~/minecraft_modded.apk ~/storage/shared/minecraft_modded.apk
+mv ~/tmp/output/minecraft_modded.apk ~/storage/shared/minecraft_modded.apk
 ```
 
 9) Now uninstall the original game and install the minecraft modded  manually
