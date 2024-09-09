@@ -2,7 +2,7 @@
 A shell script to patch the android arm32 and arm64 versions of minecraft bedrock edition
 
 
-Tested on Minecraft Bedrock Edition 1.20.62, 1.20.61, 1.20.72 and 1.20.73 may not work in future versions
+Tested on Minecraft Bedrock Edition 1.21.23 may not work in future versions
 
 
 You need the [official android version](https://play.google.com/store/apps/details?id=com.mojang.minecraftpe) to use this script
